@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>jaypm</title>
+	<atom:link href="http://192.168.0.196/wordpress/feed/" rel="self" type="application/rss+xml" />
+	<link>http://192.168.0.196:8080/wordpress</link>
+	<description>thoughts from a software developer</description>
+	<lastBuildDate>Thu, 17 Sep 2020 19:35:28 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.3</generator>
+
+<image>
+	<url>http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/cropped-Notebook66-32x32.png?v=1589572517</url>
+	<title>jaypm</title>
+	<link>http://192.168.0.196:8080/wordpress</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>What is Protected Health Information (PHI)?</title>
+		<link>http://192.168.0.196:8080/wordpress/what-is-protected-health-information-phi/</link>
+		
+		<dc:creator><![CDATA[Jay]]></dc:creator>
+		<pubDate>Thu, 17 Sep 2020 13:04:31 +0000</pubDate>
+				<category><![CDATA[Genereal]]></category>
+		<category><![CDATA[HIPAA]]></category>
+		<guid isPermaLink="false">http://192.168.0.196:8080/wordpress/?p=84</guid>
+
+					<description><![CDATA[<p>As more software and services become available for storing medical records, it becomes more pertinent that developers, IT admins, and end users become more aware of what kind of data is traveling through and into their systems. The Health Insurance Portability and Accountability Act of 1996, or HIPAA, mandates safeguards if the data contains &#8220;Protected [&#8230;]</p>
+<p>The post <a href="http://192.168.0.196:8080/wordpress/what-is-protected-health-information-phi/" target="_blank">What is Protected Health Information (PHI)?</a> first appeared on <a href="http://192.168.0.196:8080/wordpress/" target="_blank">jaypm</a>.</p>]]></description>
+										<content:encoded><![CDATA[<p>As more software and services become available for storing medical records, it becomes more pertinent that developers, IT admins, and end users become more aware of what kind of data is traveling through and into their systems.</p>
+
+
+
+<p>The Health Insurance Portability and Accountability Act of 1996, or HIPAA, mandates safeguards if the data contains &#8220;Protected Health Information,&#8221; or PHI. But what is considered PHI? Basically (and perhaps over-simplistically), it&#8217;s&nbsp;<strong>anything that can be used to identify the person</strong>.</p>
+
+
+
+<p>The following are generally considered PHI if used in a medical context. This list is by no means complete.</p>
+
+
+
+<h2>Examples of Protected Health Information</h2>
+
+
+
+<ul><li>Medical or dental records</li><li>Patient billing records</li><li>Images of patients&#8217; full faces</li><li>Radiographs</li><li>Biometric data:<ul><li>Fingerprints</li><li>Voice prints</li></ul></li><li>Patient demographics:<ul><li>Names and initials</li><li>Genders</li><li>Social Security Numbers (SSN)</li><li>Geographic region if smaller than a state, such as:<ul><li>Address</li><li>City</li><li>County</li><li>ZIP code</li></ul></li></ul></li><li>Medical or dental record numbers</li><li>Account numbers</li><li>E-mail addresses</li><li>Telephone and fax numbers</li><li>IP addresses</li><li>URL addresses</li><li>Device MAC addresses</li><li>License plates and other vehicle identifier numbers</li><li>Account numbers</li><li>Certificate / license numbers</li></ul>
+
+
+
+<p>It&#8217;s worth stressing again that this is not a definitive list.</p>
+
+
+
+<p>If your database or service contains any of these attributes, it&#8217;s best to limit their use, transmission, and store them as securely as possible.</p>
+
+
+
+<p>More information, straight from the source, can be found at:<br><a href="https://www.hhs.gov/hipaa/for-professionals/" target="_blank" rel="noreferrer noopener nofollow">https://www.hhs.gov/hipaa/for-professionals/index.html</a></p><p>The post <a href="http://192.168.0.196:8080/wordpress/what-is-protected-health-information-phi/" target="_blank">What is Protected Health Information (PHI)?</a> first appeared on <a href="http://192.168.0.196:8080/wordpress/" target="_blank">jaypm</a>.</p>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The Difference Between vbCrLf, vbNewLine and Environment.NewLine</title>
+		<link>http://192.168.0.196:8080/wordpress/the-difference-between-vbcrlf-vbnewline-and-environment-newline/</link>
+		
+		<dc:creator><![CDATA[Jay]]></dc:creator>
+		<pubDate>Sat, 16 May 2020 11:03:35 +0000</pubDate>
+				<category><![CDATA[Genereal]]></category>
+		<category><![CDATA[VB.NET]]></category>
+		<guid isPermaLink="false">http://192.168.0.196:8080/wordpress/?p=69</guid>
+
+					<description><![CDATA[<p>The question, &#8220;which is better, vbCrLf, ContrlChars.CrLf, vbNewLine, ControlChars.NewLine, Environment.NewLine, ControlChars.NewLine, or vbNewLine?&#8221; is not a question you&#8217;d get in C#, since only Environment.NewLine is available. &#160;This is a question that only appears during VB.NET development. So what&#8217;s the difference between the following five statements? Debug.Print(vbCrLf) Debug.Print(ControlChars.CrLf) Debug.Print(vbNewLine) Debug.Print(ControlChars.NewLine) Debug.Print(Environment.NewLine) Usually, nothing. &#160;They all return [&#8230;]</p>
+<p>The post <a href="http://192.168.0.196:8080/wordpress/the-difference-between-vbcrlf-vbnewline-and-environment-newline/" target="_blank">The Difference Between vbCrLf, vbNewLine and Environment.NewLine</a> first appeared on <a href="http://192.168.0.196:8080/wordpress/" target="_blank">jaypm</a>.</p>]]></description>
+										<content:encoded><![CDATA[<p>The question, &#8220;which is better, vbCrLf, ContrlChars.CrLf, vbNewLine, ControlChars.NewLine, Environment.NewLine, ControlChars.NewLine, or vbNewLine?&#8221; is not a question you&#8217;d get in C#, since only Environment.NewLine is available. &nbsp;This is a question that only appears during VB.NET development.</p>
+
+
+
+<p>So what&#8217;s the difference between the following five statements?</p>
+
+
+
+<pre class="wp-block-preformatted">Debug.Print(vbCrLf)
+Debug.Print(ControlChars.CrLf)
+Debug.Print(vbNewLine)
+Debug.Print(ControlChars.NewLine)
+Debug.Print(Environment.NewLine)</pre>
+
+
+
+<p>Usually, nothing. &nbsp;They all return a carriage return followed by a line feed (&#8220;\r\n&#8221;). &nbsp;The last one, Environment.NewLine, is a little special and there is one case where it may return something different.</p>
+
+
+
+<h3>vbCrLf</h3>
+
+
+
+<p>vbCrLf is a carry-over from old-school VB days and, for the sake of veteran VB developers, was retained. &nbsp;It actually is a constant declared in the Microsoft.VisualBasic.Constants class, so it can be referred to as Constants.vbCrLf too. &nbsp;I wouldn&#8217;t be surprised if this constant were eventually dropped in future versions of the VB.NET language. &nbsp;There&#8217;s also another constant with the same value defined as ControlChars.CrLf. &nbsp;All will return the value &#8220;\r\n&#8221;, indicating a carriage return (vbCr or &#8220;\r&#8221;) followed by a line feed (vbLf or &#8220;\n&#8221;). &nbsp;In Windows, typically both are expected, even though sometimes you&#8217;ll find folks using either one or the other and it is usually rendered correctly. &nbsp;However, I don&#8217;t recommend the practice of using one or the other, or even the string &#8220;\r\n&#8221;. &nbsp;Better to just let a predefined constant (like any one of the five mentioned in this article) to do the job. &nbsp;But like I said earlier, I suspect this constant is on its way out and will likely become deprecated and obsolete.</p>
+
+
+
+<h3>vbNewLine</h3>
+
+
+
+<p>vbNewLine (or Constants.vbNewLine) is identical to vbCrLf, just a little easier to understand for newer developers. &nbsp;It can also be referred to as ControlChars.NewLine. &nbsp;These constants also return the value &#8220;\r\n&#8221;.</p>
+
+
+
+<h3>Downside of ControlChars.CrLf and ControlChars.NewLine</h3>
+
+
+
+<p>So it&#8217;s established that vbCrLf and vbNewLine are identical to ControlChars.CrLf and ControlChars.NewLine, respectively. &nbsp;So although we&#8217;ve got four constants that all really mean the same thing (which is typically ill-advised, since any redundant code or constants are more costly to change later), the main drawback is that&nbsp;<em>they are all VB.NET specific</em>. &nbsp;Unless you import the Microsoft.VisualBasic reference to your C#, C++, or F# project, none of these constants are available in your code when working with non-VB.NET projects. &nbsp;These are all constants written solely for the convenience of the Visual Basic.NET developer.</p>
+
+
+
+<h3>Environment.NewLine</h3>
+
+
+
+<p>Environment.NewLine in my opinion is the most versatile and the one I recommend. &nbsp;Not only is it the only one of these five options also available in C#, making it the most universal, but it has the added benefit of being platform-independent. &nbsp;Well, at least it&#8217;s intended to work in either Windows or Unix environments. &nbsp;In the case of Unix, there is no need for a carriage return, just a new line (&#8220;\n&#8221;) character will suffice. &nbsp;So for compatibility between both platforms, this property (emphasizing here that it&#8217;s a property and not a constant) will adjust and return either &#8220;\r\n&#8221; in Windows or simply &#8220;\n&#8221; in Unix.</p>
+
+
+
+<p>The one downside is that it can&#8217;t be used to define a constant; it&#8217;s a read-only property, not a constant itself like the other options.</p>
+
+
+
+<pre class="wp-block-preformatted">Const x As String = "Testing as a constant" &amp;&nbsp;Environment.NewLine ' Doesn't compile</pre>
+
+
+
+<p>The above will throw the error &#8220;Constant expression is required&#8221; at design / compile time. &nbsp;In this particular case, I&#8217;d recommend using ControlChars.NewLine instead.</p>
+
+
+
+<h3>ControlChars Class in C#</h3>
+
+
+
+<p>Here&#8217;s the source for the ControlChars class written in C#, for the case where you don&#8217;t want to or can&#8217;t use Environment.NewLine:</p>
+
+
+
+<pre class="wp-block-preformatted">  public sealed class ControlChars
+  {
+    public const string CrLf = "\r\n";
+    public const string NewLine = "\r\n";
+    public const char Cr = '\r';
+    public const char Lf = '\n';
+    public const char Back = '\b';
+    public const char FormFeed = '\f';
+    public const char Tab = '\t';
+    public const char VerticalTab = '\v';
+    public const char NullChar = '\0';
+    public const char Quote = '"';
+  }</pre>
+
+
+
+<p>So to sum it up,&nbsp;<em>all five options return the exact same value</em>, except for Environment.NewLine, which can adapt to the platform on which your application is running. &nbsp;If you don&#8217;t believe your application will ever run on another platform but Windows (but why limit yourself?) and you anticipate no possibility of ever using C#, then I would recommend at least being&nbsp;<em>consistent</em>&nbsp;and ensure your entire solution uses only&nbsp;<em>one</em>&nbsp;of these constants.</p><p>The post <a href="http://192.168.0.196:8080/wordpress/the-difference-between-vbcrlf-vbnewline-and-environment-newline/" target="_blank">The Difference Between vbCrLf, vbNewLine and Environment.NewLine</a> first appeared on <a href="http://192.168.0.196:8080/wordpress/" target="_blank">jaypm</a>.</p>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Making a low-cost dry heat &#8220;oven&#8221; for N95 masks</title>
+		<link>http://192.168.0.196:8080/wordpress/low-cost-dry-heat-oven-for-n95-masks/</link>
+		
+		<dc:creator><![CDATA[Jay]]></dc:creator>
+		<pubDate>Fri, 15 May 2020 19:53:47 +0000</pubDate>
+				<category><![CDATA[Not Programming]]></category>
+		<guid isPermaLink="false">http://192.168.0.196:8080/wordpress/?p=18</guid>
+
+					<description><![CDATA[<p>In a time when N95 masks are extremely scarce and are difficult to obtain and while healthcare providers have no choice but to reuse masks, makers are stepping up and are trying to fill the gap. For about $120 USD worth of parts such as a styrofoam shipping box, lightbulbs, and a thermostat with a [&#8230;]</p>
+<p>The post <a href="http://192.168.0.196:8080/wordpress/low-cost-dry-heat-oven-for-n95-masks/" target="_blank">Making a low-cost dry heat "oven" for N95 masks</a> first appeared on <a href="http://192.168.0.196:8080/wordpress/" target="_blank">jaypm</a>.</p>]]></description>
+										<content:encoded><![CDATA[<p>In a time when N95 masks are extremely scarce and are difficult to obtain and while healthcare providers have no choice but to reuse masks, makers are stepping up and are trying to fill the gap.</p>
+
+
+
+<p>For about $120 USD worth of parts such as a styrofoam shipping box, lightbulbs, and a thermostat with a sensor, I&#8217;ve built a heater for N95 masks. This device uses the &#8220;dry heat&#8221; technique, providing high and consistent heat, out of easily obtainable, off-the-shelf parts.</p>
+
+
+
+<h2>Disclaimer and Background</h2>
+
+
+
+<p>I am not a doctor. I am not a scientist. I am not providing official guidance and I do not represent any organization or government in any capacity. I am a software engineer and I write code for a living, which affords me almost no medical knowledge whatsoever. I offer no guarantee of any effectiveness.</p>
+
+
+
+<p>Any information presented here may be based on incorrect or unproven assumptions. This site may include information that is already outdated or determined to be just flat-out wrong, especially as more time advances. This was written during the middle of a coronavirus pandemic and the luxury of hindsight to identify the proper paths we should have taken has not yet been afforded to us.</p>
+
+
+
+<p>This was inspired by the <a href="https://makezine.com/2020/03/30/plan-c-crisis-mode-for-covid-19/" target="_blank" aria-label=" (opens in a new tab)" rel="noreferrer noopener" class="aioseop-link">Make: Plan C initiative</a>, in an attempt to provide not government (&#8220;Plan A&#8221;), not industry (&#8220;Plan B&#8221;), but civic (&#8220;Plan C&#8221;) action to help answer the call, written in the spirit of trying to help by disseminating knowledge in a fast-paced and changing landscape.</p>
+
+
+
+<p>This is not my invention, only an interpretation from others ideas I&#8217;ve seen online. I was most inspired by <a aria-label="Hackerfarm's article, &quot;HOWTO: LOW COST HEAT STERILIZER FOR VIRUS INACTIVATION.&quot; (opens in a new tab)" href="https://hackerfarm.jp/2020/04/howto-low-cost-heat-sterilizer-for-virus-inactivation/" rel="noreferrer noopener nofollow" target="_blank" class="aioseop-link">Hackerfarm&#8217;s article, &#8220;HOWTO: LOW COST HEAT STERILIZER FOR VIRUS INACTIVATION.&#8221;</a> (Thank you.)</p>
+
+
+
+<p>According to practically everyone, including myself, it is believed <strong>N95 masks must not be reused</strong> and any method to &#8220;sanitize&#8221; them can lead to degradation and mask failure. Doing so could lead to a false sense of security, their use could be dangerous and could unfortunately lead to death.</p>
+
+
+
+<p>Care must be taken when handling used masks and techniques to minimize virus transmission must be used, such as using gloves and bags.</p>
+
+
+
+<p>Operation of this device may cause electrocution or start a fire and thus must only be operated by an adult under constant supervision with a fire extinguisher readily handy.</p>
+
+
+
+<p>The &#8220;dry heat&#8221; technique used here will not effectively kill all viruses, bacteria, molds, or fungi. As such, this will not completely sanitize masks.</p>
+
+
+
+<p>In addition to the dry heat technique, there are many other methods that researchers are actively testing and validating, including ultraviolet light and vaporized hydrogen peroxide. These may be more effective (yet likely more expensive) than using dry heat.</p>
+
+
+
+<p>Please use perform your own research, use your own judgment and make informed decisions from multiple, official sources.</p>
+
+
+
+<p>Please use at your own risk.</p>
+
+
+
+<figure class="wp-block-image size-large"><img width="1024" height="643" src="http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_150844-1024x643.jpg" alt="A makeshift oven for N95 masks" class="wp-image-46" srcset="http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_150844-1024x643.jpg?v=1589571027 1024w, http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_150844-300x188.jpg?v=1589571027 300w, http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_150844-768x482.jpg?v=1589571027 768w, http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_150844-1536x964.jpg?v=1589571027 1536w, http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_150844-2048x1285.jpg?v=1589571027 2048w, http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_150844-1200x753.jpg?v=1589571027 1200w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<h2>Parts List</h2>
+
+
+
+<script type="text/javascript">
+amzn_assoc_tracking_id = "jaymaiuranshtmlc";
+amzn_assoc_ad_mode = "manual";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_design = "enhanced_links";
+amzn_assoc_asins = "B007IC18J0";
+amzn_assoc_placement = "adunit";
+amzn_assoc_linkid = "165360dfd4f7b126d162820f1c978177";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+
+
+<script type="text/javascript">
+amzn_assoc_tracking_id = "jaypm-20";
+amzn_assoc_ad_mode = "manual";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_design = "enhanced_links";
+amzn_assoc_asins = "B01HXM5UAC";
+amzn_assoc_placement = "adunit";
+amzn_assoc_linkid = "49f4e6ea943001aa8f942b429b1505f1";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+
+
+<script type="text/javascript">
+amzn_assoc_tracking_id = "jaymaiuranshtmlc";
+amzn_assoc_ad_mode = "manual";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_design = "enhanced_links";
+amzn_assoc_asins = "B071HLZQ2F";
+amzn_assoc_placement = "adunit";
+amzn_assoc_linkid = "669c4ccdc7de0871e4f63753e00d58da";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+
+
+<script type="text/javascript">
+amzn_assoc_tracking_id = "jaymaiuranshtmlc";
+amzn_assoc_ad_mode = "manual";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_design = "enhanced_links";
+amzn_assoc_asins = "B00BCHYUJ2";
+amzn_assoc_placement = "adunit";
+amzn_assoc_linkid = "52b1a3ed18186b216251147afe867bec";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+
+
+<script type="text/javascript">
+amzn_assoc_tracking_id = "jaymaiuranshtmlc";
+amzn_assoc_ad_mode = "manual";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_design = "enhanced_links";
+amzn_assoc_asins = "B00FRODUR4";
+amzn_assoc_placement = "adunit";
+amzn_assoc_linkid = "90e178b2ec7b84e89a4bc12cfca391a5";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+
+
+<script type="text/javascript">
+amzn_assoc_tracking_id = "jaymaiuranshtmlc";
+amzn_assoc_ad_mode = "manual";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_design = "enhanced_links";
+amzn_assoc_asins = "B00LOQD5LA";
+amzn_assoc_placement = "adunit";
+amzn_assoc_linkid = "dfacc8fd47aa7ce64116c4c2f885b8af";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+
+
+<ul><li>Styrofoam box:<br><a aria-label=" (opens in a new tab)" href="https://www.amazon.com/gp/product/B007IC18J0/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B007IC18J0&amp;linkCode=as2&amp;tag=jaypm-20&amp;linkId=35eb55a2fb71776be2f5a856dd24c39d" target="_blank" rel="noreferrer noopener nofollow" class="aioseop-link">Polar Tech 271C Thermo Chill Insulated Carton with Foam Shipper, Extra Large, 26&#8243; Length x 19-3/8&#8243; Width x 10-1/2&#8243; Depth</a><img width="1" height="1" src="//ir-na.amazon-adsystem.com/e/ir?t=jaypm-20&amp;l=am2&amp;o=1&amp;a=B007IC18J0" alt=""><br></li><li>Thermostat with sensor:<br><a aria-label=" (opens in a new tab)" href="https://www.amazon.com/gp/product/B01HXM5UAC/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B01HXM5UAC&amp;linkCode=as2&amp;tag=jaypm-20&amp;linkId=490b6f2e4dd62627475f77736ea784fb" target="_blank" rel="noreferrer noopener nofollow" class="aioseop-link">Inkbird ITC-308 Digital Temperature Controller 2-Stage Outlet Thermostat Heating and Cooling Mode 110V 10A 1100W</a><img width="1" height="1" src="//ir-na.amazon-adsystem.com/e/ir?t=jaypm-20&amp;l=am2&amp;o=1&amp;a=B01HXM5UAC" alt=""><br></li><li>Lamp sockets (using only 2 out of the 3):<br><a aria-label=" (opens in a new tab)" href="https://www.amazon.com/gp/product/B071HLZQ2F/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B071HLZQ2F&amp;linkCode=as2&amp;tag=jaypm-20&amp;linkId=21ec480a7023a6bbe1482d87afb5020a" target="_blank" rel="noreferrer noopener nofollow" class="aioseop-link">FadimiKoo E26/E27 Lamp Socket, 3 Pack</a><img width="1" height="1" src="//ir-na.amazon-adsystem.com/e/ir?t=jaypm-20&amp;l=am2&amp;o=1&amp;a=B071HLZQ2F" alt=""><br></li><li>Bulbs (buy extra in case damaged during shipping):<br><a aria-label=" (opens in a new tab)" href="https://www.amazon.com/gp/product/B00BCHYUJ2/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00BCHYUJ2&amp;linkCode=as2&amp;tag=jaypm-20&amp;linkId=28398f51cd81a3f7d5ffe15f71956900" target="_blank" rel="noreferrer noopener nofollow" class="aioseop-link">Satco 72 Watt (100 Watt) 1490 Lumens A19 Halogen Warm White 3000K Clear Light Bulb, 2-Pack</a><img width="1" height="1" src="//ir-na.amazon-adsystem.com/e/ir?t=jaypm-20&amp;l=am2&amp;o=1&amp;a=B00BCHYUJ2" alt=""><br></li><li>AC outlet splitter to use one outlet for two lights:<br><a aria-label=" (opens in a new tab)" href="https://www.amazon.com/gp/product/B00FRODUR4/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00FRODUR4&amp;linkCode=as2&amp;tag=jaypm-20&amp;linkId=b7c772561e4f5d0b6861063064220cbc" target="_blank" rel="noreferrer noopener nofollow" class="aioseop-link">Cablelera Power Cord Extension and Splitter, NEMA 5-15P to NEMA 5-15R x 2, 16 AWG, 13A, 125V (ZWACPQAG-14)</a><img width="1" height="1" src="//ir-na.amazon-adsystem.com/e/ir?t=jaypm-20&amp;l=am2&amp;o=1&amp;a=B00FRODUR4" alt=""><br></li><li>[Future Version] Aluminum foil to insulate the inside:<br><a rel="noreferrer noopener" target="_blank" href="https://www.amazon.com/gp/product/B00LOQD5LA/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00LOQD5LA&amp;linkCode=as2&amp;tag=jaypm-20&amp;linkId=55968d3aedaa34ebe7b630ded68a9ff0" class="aioseop-link">Reynolds Wrap Heavy Duty Aluminum Foil, 75 Sq Feet</a></li></ul>
+
+
+
+<figure class="wp-block-image size-large"><img width="1024" height="576" src="http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_151907-1024x576.jpg" alt="N95 masks inside a makeshift oven, focusing on two halogen light bulbs" class="wp-image-47" srcset="http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_151907-1024x576.jpg?v=1589571111 1024w, http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_151907-300x169.jpg?v=1589571111 300w, http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_151907-768x432.jpg?v=1589571111 768w, http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_151907-1536x864.jpg?v=1589571111 1536w, http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_151907-2048x1152.jpg?v=1589571111 2048w, http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_151907-1200x675.jpg?v=1589571111 1200w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>Two bulbs were sufficient to rapidly and reliably reach the desired 70°C</figcaption></figure>
+
+
+
+<figure class="wp-block-image size-large"><img width="1024" height="576" src="http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_150819-1024x576.jpg" alt="Close-up of the temperature probe, mounted inside the box" class="wp-image-49" srcset="http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_150819-1024x576.jpg?v=1589571592 1024w, http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_150819-300x169.jpg?v=1589571592 300w, http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_150819-768x432.jpg?v=1589571592 768w, http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_150819-1536x864.jpg?v=1589571592 1536w, http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_150819-2048x1152.jpg?v=1589571592 2048w, http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_150819-1200x675.jpg?v=1589571592 1200w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>Close-up of the temperature probe, mounted inside the box</figcaption></figure>
+
+
+
+<figure class="wp-block-image size-large"><img width="1024" height="576" src="http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_154959-1024x576.jpg" alt="Two lightbulbs are mounted through the styrofoam cover" class="wp-image-50" srcset="http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_154959-1024x576.jpg?v=1589572352 1024w, http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_154959-300x169.jpg?v=1589572352 300w, http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_154959-768x432.jpg?v=1589572352 768w, http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_154959-1536x864.jpg?v=1589572352 1536w, http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_154959-2048x1152.jpg?v=1589572352 2048w, http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/IMG_20200515_154959-1200x675.jpg?v=1589572352 1200w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>Two lightbulbs are mounted through the styrofoam cover</figcaption></figure>
+
+
+
+<h2>Operation</h2>
+
+
+
+<p>Based on the findings of <a aria-label="this study (opens in a new tab)" href="https://www.medrxiv.org/content/10.1101/2020.04.11.20062018v2" target="_blank" rel="noreferrer noopener nofollow" class="aioseop-link">this study</a>, masks were heated to at least 70° Celsius (158° Fahrenheit) for a minimum of 60 minutes.</p>
+
+
+
+<h2>References and Further Reading</h2>
+
+
+
+<p>These links were used to research this article. I do not have any affiliation with any of these sites or organizations and cannot attest to their their accuracy or motives. Please also perform your own research outside this list, as this is nowhere near definitive or authoritative.</p>
+
+
+
+<ul><li><a href="https://www.nih.gov/news-events/news-releases/nih-study-validates-decontamination-methods-re-use-n95-respirators" target="_blank" aria-label=" (opens in a new tab)" rel="noreferrer noopener" class="aioseop-link">https://www.nih.gov/news-events/news-releases/nih-study-validates-decontamination-methods-re-use-n95-respirators</a></li><li><a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/respirators-strategy/index.html" target="_blank" aria-label=" (opens in a new tab)" rel="noreferrer noopener" class="aioseop-link">https://www.cdc.gov/coronavirus/2019-ncov/hcp/respirators-strategy/index.html</a></li><li><a href="https://www.sciencedirect.com/science/article/pii/S2666524720300033" target="_blank" aria-label=" (opens in a new tab)" rel="noreferrer noopener" class="aioseop-link">https://www.sciencedirect.com/science/article/pii/S2666524720300033</a></li><li><a href="https://www.medrxiv.org/content/10.1101/2020.04.11.20062018v2" target="_blank" aria-label=" (opens in a new tab)" rel="noreferrer noopener" class="aioseop-link">https://www.medrxiv.org/content/10.1101/2020.04.11.20062018v2</a></li><li><a aria-label=" (opens in a new tab)" href="https://www.wbur.org/commonhealth/2020/04/16/cornavirus-nih-fda-cleaning-n95-masks" target="_blank" rel="noreferrer noopener nofollow" class="aioseop-link">https://www.wbur.org/commonhealth/2020/04/16/cornavirus-nih-fda-cleaning-n95-masks</a></li><li><a href="https://www.livescience.com/sanitizing-medical-masks-for-reuse-coronavirus.html" target="_blank" aria-label=" (opens in a new tab)" rel="noreferrer noopener" class="aioseop-link">https://www.livescience.com/sanitizing-medical-masks-for-reuse-coronavirus.html</a></li><li><a href="https://www.cpac.com/decontaimation-of-n95-respirators-using-rapidheat-rh-n95-high-velocity-hot-air-technology/" target="_blank" aria-label=" (opens in a new tab)" rel="noreferrer noopener" class="aioseop-link">https://www.cpac.com/decontaimation-of-n95-respirators-using-rapidheat-rh-n95-high-velocity-hot-air-technology/</a></li><li><a aria-label=" (opens in a new tab)" href="https://news.stonybrook.edu/sb_medicine/dry-heat-ovens-can-effectively-disinfect-n95-masks/" target="_blank" rel="noreferrer noopener nofollow" class="aioseop-link">https://news.stonybrook.edu/sb_medicine/dry-heat-ovens-can-effectively-disinfect-n95-masks/</a></li><li><a href="https://makezine.com/2020/03/30/plan-c-crisis-mode-for-covid-19/" target="_blank" aria-label=" (opens in a new tab)" rel="noreferrer noopener" class="aioseop-link">https://makezine.com/2020/03/30/plan-c-crisis-mode-for-covid-19/</a></li><li><a aria-label=" (opens in a new tab)" href="https://www.n95decon.org/heat" target="_blank" rel="noreferrer noopener nofollow" class="aioseop-link">https://www.n95decon.org/heat</a></li></ul>
+
+
+
+<p>Stay safe out there. We&#8217;ll get through this.</p>
+
+
+
+<p>If you made one yourself, please drop me a line and let me know!</p><p>The post <a href="http://192.168.0.196:8080/wordpress/low-cost-dry-heat-oven-for-n95-masks/" target="_blank">Making a low-cost dry heat "oven" for N95 masks</a> first appeared on <a href="http://192.168.0.196:8080/wordpress/" target="_blank">jaypm</a>.</p>]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>VB.NET &#8211; jaypm</title>
+	<atom:link href="http://192.168.0.196/wordpress/tag/vb-net/feed/" rel="self" type="application/rss+xml" />
+	<link>http://192.168.0.196:8080/wordpress</link>
+	<description>thoughts from a software developer</description>
+	<lastBuildDate>Sat, 16 May 2020 11:03:36 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.3</generator>
+
+<image>
+	<url>http://192.168.0.196:8080/wordpress/wp-content/uploads/2020/05/cropped-Notebook66-32x32.png?v=1589572517</url>
+	<title>VB.NET &#8211; jaypm</title>
+	<link>http://192.168.0.196:8080/wordpress</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>The Difference Between vbCrLf, vbNewLine and Environment.NewLine</title>
+		<link>http://192.168.0.196:8080/wordpress/the-difference-between-vbcrlf-vbnewline-and-environment-newline/</link>
+		
+		<dc:creator><![CDATA[Jay]]></dc:creator>
+		<pubDate>Sat, 16 May 2020 11:03:35 +0000</pubDate>
+				<category><![CDATA[Genereal]]></category>
+		<category><![CDATA[VB.NET]]></category>
+		<guid isPermaLink="false">http://192.168.0.196:8080/wordpress/?p=69</guid>
+
+					<description><![CDATA[<p>The question, &#8220;which is better, vbCrLf, ContrlChars.CrLf, vbNewLine, ControlChars.NewLine, Environment.NewLine, ControlChars.NewLine, or vbNewLine?&#8221; is not a question you&#8217;d get in C#, since only Environment.NewLine is available. &#160;This is a question that only appears during VB.NET development. So what&#8217;s the difference between the following five statements? Debug.Print(vbCrLf) Debug.Print(ControlChars.CrLf) Debug.Print(vbNewLine) Debug.Print(ControlChars.NewLine) Debug.Print(Environment.NewLine) Usually, nothing. &#160;They all return [&#8230;]</p>
+<p>The post <a href="http://192.168.0.196:8080/wordpress/the-difference-between-vbcrlf-vbnewline-and-environment-newline/" target="_blank">The Difference Between vbCrLf, vbNewLine and Environment.NewLine</a> first appeared on <a href="http://192.168.0.196:8080/wordpress/" target="_blank">jaypm</a>.</p>]]></description>
+										<content:encoded><![CDATA[<p>The question, &#8220;which is better, vbCrLf, ContrlChars.CrLf, vbNewLine, ControlChars.NewLine, Environment.NewLine, ControlChars.NewLine, or vbNewLine?&#8221; is not a question you&#8217;d get in C#, since only Environment.NewLine is available. &nbsp;This is a question that only appears during VB.NET development.</p>
+
+
+
+<p>So what&#8217;s the difference between the following five statements?</p>
+
+
+
+<pre class="wp-block-preformatted">Debug.Print(vbCrLf)
+Debug.Print(ControlChars.CrLf)
+Debug.Print(vbNewLine)
+Debug.Print(ControlChars.NewLine)
+Debug.Print(Environment.NewLine)</pre>
+
+
+
+<p>Usually, nothing. &nbsp;They all return a carriage return followed by a line feed (&#8220;\r\n&#8221;). &nbsp;The last one, Environment.NewLine, is a little special and there is one case where it may return something different.</p>
+
+
+
+<h3>vbCrLf</h3>
+
+
+
+<p>vbCrLf is a carry-over from old-school VB days and, for the sake of veteran VB developers, was retained. &nbsp;It actually is a constant declared in the Microsoft.VisualBasic.Constants class, so it can be referred to as Constants.vbCrLf too. &nbsp;I wouldn&#8217;t be surprised if this constant were eventually dropped in future versions of the VB.NET language. &nbsp;There&#8217;s also another constant with the same value defined as ControlChars.CrLf. &nbsp;All will return the value &#8220;\r\n&#8221;, indicating a carriage return (vbCr or &#8220;\r&#8221;) followed by a line feed (vbLf or &#8220;\n&#8221;). &nbsp;In Windows, typically both are expected, even though sometimes you&#8217;ll find folks using either one or the other and it is usually rendered correctly. &nbsp;However, I don&#8217;t recommend the practice of using one or the other, or even the string &#8220;\r\n&#8221;. &nbsp;Better to just let a predefined constant (like any one of the five mentioned in this article) to do the job. &nbsp;But like I said earlier, I suspect this constant is on its way out and will likely become deprecated and obsolete.</p>
+
+
+
+<h3>vbNewLine</h3>
+
+
+
+<p>vbNewLine (or Constants.vbNewLine) is identical to vbCrLf, just a little easier to understand for newer developers. &nbsp;It can also be referred to as ControlChars.NewLine. &nbsp;These constants also return the value &#8220;\r\n&#8221;.</p>
+
+
+
+<h3>Downside of ControlChars.CrLf and ControlChars.NewLine</h3>
+
+
+
+<p>So it&#8217;s established that vbCrLf and vbNewLine are identical to ControlChars.CrLf and ControlChars.NewLine, respectively. &nbsp;So although we&#8217;ve got four constants that all really mean the same thing (which is typically ill-advised, since any redundant code or constants are more costly to change later), the main drawback is that&nbsp;<em>they are all VB.NET specific</em>. &nbsp;Unless you import the Microsoft.VisualBasic reference to your C#, C++, or F# project, none of these constants are available in your code when working with non-VB.NET projects. &nbsp;These are all constants written solely for the convenience of the Visual Basic.NET developer.</p>
+
+
+
+<h3>Environment.NewLine</h3>
+
+
+
+<p>Environment.NewLine in my opinion is the most versatile and the one I recommend. &nbsp;Not only is it the only one of these five options also available in C#, making it the most universal, but it has the added benefit of being platform-independent. &nbsp;Well, at least it&#8217;s intended to work in either Windows or Unix environments. &nbsp;In the case of Unix, there is no need for a carriage return, just a new line (&#8220;\n&#8221;) character will suffice. &nbsp;So for compatibility between both platforms, this property (emphasizing here that it&#8217;s a property and not a constant) will adjust and return either &#8220;\r\n&#8221; in Windows or simply &#8220;\n&#8221; in Unix.</p>
+
+
+
+<p>The one downside is that it can&#8217;t be used to define a constant; it&#8217;s a read-only property, not a constant itself like the other options.</p>
+
+
+
+<pre class="wp-block-preformatted">Const x As String = "Testing as a constant" &amp;&nbsp;Environment.NewLine ' Doesn't compile</pre>
+
+
+
+<p>The above will throw the error &#8220;Constant expression is required&#8221; at design / compile time. &nbsp;In this particular case, I&#8217;d recommend using ControlChars.NewLine instead.</p>
+
+
+
+<h3>ControlChars Class in C#</h3>
+
+
+
+<p>Here&#8217;s the source for the ControlChars class written in C#, for the case where you don&#8217;t want to or can&#8217;t use Environment.NewLine:</p>
+
+
+
+<pre class="wp-block-preformatted">  public sealed class ControlChars
+  {
+    public const string CrLf = "\r\n";
+    public const string NewLine = "\r\n";
+    public const char Cr = '\r';
+    public const char Lf = '\n';
+    public const char Back = '\b';
+    public const char FormFeed = '\f';
+    public const char Tab = '\t';
+    public const char VerticalTab = '\v';
+    public const char NullChar = '\0';
+    public const char Quote = '"';
+  }</pre>
+
+
+
+<p>So to sum it up,&nbsp;<em>all five options return the exact same value</em>, except for Environment.NewLine, which can adapt to the platform on which your application is running. &nbsp;If you don&#8217;t believe your application will ever run on another platform but Windows (but why limit yourself?) and you anticipate no possibility of ever using C#, then I would recommend at least being&nbsp;<em>consistent</em>&nbsp;and ensure your entire solution uses only&nbsp;<em>one</em>&nbsp;of these constants.</p><p>The post <a href="http://192.168.0.196:8080/wordpress/the-difference-between-vbcrlf-vbnewline-and-environment-newline/" target="_blank">The Difference Between vbCrLf, vbNewLine and Environment.NewLine</a> first appeared on <a href="http://192.168.0.196:8080/wordpress/" target="_blank">jaypm</a>.</p>]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
